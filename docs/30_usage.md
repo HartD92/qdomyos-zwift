@@ -44,11 +44,13 @@ This is the list of settings available in the application. These settings needs 
 | -bike-wheel-revs        		| Boolean  | False       |                                                                              |
 | -run-cadence-sensor     		| Boolean  | False       |                                                                              |
 | -nordictrack-10-treadmill  	| Boolean  | False       | Enable NordicTrack compatibility mode                                        |
+| -virtual-echelon          	| Boolean  | False       | Enable Virtual Echelon Device                                                |
 | -train                  		| String   |             | Force training program                                                       |
 | -name                   		| String   |             | Force bluetooth device name (if QZ struggles finding your fitness equipment) |
 | -poll-device-time       		| Int      | 200 (ms)    | Frequency to refresh information from QZ to Fitness equipment               |
 | -bike-resistance-gain   		| Int      |             | Adjust resistance from the fitness application                               |
 | -bike-resistance-offset 		| Int      |             | Set another resistance point than default                                    |
+
 
 
 
