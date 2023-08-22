@@ -67,6 +67,7 @@ bool bike_wheel_revs = false;
 bool run_cadence_sensor = false;
 bool nordictrack_10_treadmill = false;
 bool reebok_fr30_treadmill = false;
+bool virtual_device_echelon = false;
 QString trainProgram;
 QString deviceName = QLatin1String("");
 uint32_t pollDeviceTime = 200;
@@ -136,6 +137,8 @@ QCoreApplication *createApplication(int &argc, char *argv[]) {
             reebok_fr30_treadmill = true;
         if (!qstrcmp(argv[i], "-test-peloton"))
             testPeloton = true;
+        if (!qstrcmp(argv[i], "-virtual-echelon"))
+            virtual_device_echelon = true;
         if (!qstrcmp(argv[i], "-test-hfb"))
             testHomeFitnessBudy = true;
         if (!qstrcmp(argv[i], "-test-pzp"))
@@ -364,6 +367,7 @@ int main(int argc, char *argv[]) {
         settings.setValue(QZSettings::run_cadence_sensor, run_cadence_sensor);
         settings.setValue(QZSettings::nordictrack_10_treadmill, nordictrack_10_treadmill);
         settings.setValue(QZSettings::reebok_fr30_treadmill, reebok_fr30_treadmill);
+        settings.setValue(QZSettings::virtual_device_echelon, virtual_device_echelon);
     }
 #endif
 
